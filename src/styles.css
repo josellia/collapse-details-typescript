@@ -1,0 +1,28 @@
+.details-container__summary {
+  padding: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  transition: all 1s ease;
+}
+
+details[open] summary ~ * {
+  animation: open 0.5s ease-in-out;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+.details-container__content {
+  margin-bottom: 2em;
+  margin-left: 0.6em;
+}
