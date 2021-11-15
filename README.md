@@ -3,7 +3,6 @@
 React component for extra content Typescript version
 
 ![npm](https://img.shields.io/npm/v/summary-details)
-![NPM](https://img.shields.io/npm/l/summary-details)
 
 https://user-images.githubusercontent.com/33287490/138172984-83e1c7bc-717c-490a-a713-a1e7903451ad.mp4
 

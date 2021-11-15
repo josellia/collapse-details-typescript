@@ -1,6 +1,6 @@
 {
   "name": "summary-details",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "author": "joselia",
@@ -10,7 +10,7 @@
     "build": "webpack",
     "tsc": "tsc"
   },
-  "description": "This component is an abstraction of a collapse, but using native HTML properties",
+  "description": "Component collapse React.JS(Typescript), but using native HTML properties.",
   "keywords": [
     "React",
     "Component",
