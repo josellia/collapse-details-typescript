@@ -11,6 +11,7 @@ interface IDetails {
   bgHover?: string;
   colorHover?: string;
   borderRadius?: string;
+  border?: string;
   summary?: string;
 }
 const CollapseDetails: React.FC<IDetails> = ({
@@ -22,11 +23,11 @@ const CollapseDetails: React.FC<IDetails> = ({
   bgHover,
   colorHover,
   borderRadius,
+  border,
   summary,
-  ...rest
 }) => {
   const [hoverRef, isHovered] = useHover();
-  console.log(hoverRef)
+  console.log(hoverRef);
 
   const styles = {
     styleContainer: {
@@ -36,6 +37,7 @@ const CollapseDetails: React.FC<IDetails> = ({
       background: isHovered ? bgHover || "orange" : bgColor || "#e9d41d",
       color: isHovered ? colorHover || "#fff" : color || "#000",
       borderRadius: borderRadius || "0.3em",
+      border: border,
     },
   };
   return (
@@ -45,18 +47,19 @@ const CollapseDetails: React.FC<IDetails> = ({
           ref={hoverRef}
           style={styles.styleSummary}
           className="details-container__summary "
-          {...rest}
         >
           {summary}
         </summary>
 
-        <div className={`details-container__content ${styleDetailsContent}`}>{children}</div>
+        <div className={`details-container__content ${styleDetailsContent}`}>
+          {children}
+        </div>
       </details>
     </main>
   );
 };
 
-const  useHover = () => {
+const useHover = () => {
   const [hover, setHover] = useState<any>(false);
 
   const ref = useRef<HTMLDivElement>(null);
@@ -64,7 +67,7 @@ const  useHover = () => {
   const handleMouseOver = () => setHover(true);
   const handleMouseOut = () => setHover(false);
 
-  useEffect(():(() => void) | void => {
+  useEffect((): (() => void) | void => {
     const node = ref.current;
     if (node) {
       node.addEventListener("mouseover", handleMouseOver);
