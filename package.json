@@ -2,8 +2,10 @@
   "name": "summary-details",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "author": "josellia",
+  "module": "dist/index.js",
+  "author": "joselia",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "build": "webpack",
     "tsc": "tsc"
@@ -17,6 +19,14 @@
     "Typescript"
   
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josellia/collapse-details-typescript.git"
+  },
+ "bugs": {
+   "url": "https://github.com/josellia/collapse-details-typescript/issues"
+ },
+ "homepage": "https://github.com/josellia/collapse-details-typescript#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

@@ -1,6 +1,6 @@
 # summary-details
 
-React component for extra content
+React component for extra content Typescript version
 
 ![npm](https://img.shields.io/npm/v/summary-details)
 ![NPM](https://img.shields.io/npm/l/summary-details)
@@ -20,22 +20,22 @@ yarn add summary-details
 ## How to use default component
 
 ```jsx
-import DetailsCollapse from "summary-details";
+import CollapseDetails from "summary-details";
 
-<DetailsCollapse summary="Lorem ipsum dolor sit">
+<CollapseDetails summary="Lorem ipsum dolor sit">
   <p>
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptates
     obcaecati
   </p>
-</DetailsCollapse>;
+</CollapseDetails>;
 ```
 
 ## How to use custom props component
 
 ```jsx
-import DetailsCollapse from "react-collapse-details";
+import CollapseDetails from "react-collapse-details";
 
-<DetailsCollapse
+<CollapseDetails
   summary="Lorem ipsum dolor sit"
   width="60rem"
   bgColor="red"
@@ -48,7 +48,7 @@ import DetailsCollapse from "react-collapse-details";
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptates
     obcaecati
   </p>
-</DetailsCollapse>;
+</CollapseDetails>;
 ```
 
 ## Properties
