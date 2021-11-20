@@ -8,6 +8,7 @@ interface IDetails {
     bgHover?: string;
     colorHover?: string;
     borderRadius?: string;
+    border?: string;
     summary?: string;
 }
 declare const CollapseDetails: React.FC<IDetails>;

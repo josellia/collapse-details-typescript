@@ -32,7 +32,7 @@ import CollapseDetails from "summary-details";
 ## How to use custom props component
 
 ```jsx
-import CollapseDetails from "react-collapse-details";
+import CollapseDetails from "summary-details";
 
 <CollapseDetails
   summary="Lorem ipsum dolor sit"
